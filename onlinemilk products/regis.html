@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="regis.css">
+    </head>
+    <body>
+    <div class="wrapper">
+    <form action="regis1.php" method="POST" onsubmit="return validateForm()">
+        <h1>Registration</h1>
+        <div class="input-box">
+            <input type="text" name="name" placeholder="User Name" required>    
+        </div>
+		<div class="input-box">
+            <input type="text" name="lname" placeholder="Last Name" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="email" id="email" placeholder="Email Id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  title="Please follow @gmai.com pattern" required>
+        </div>        
+        <div class="input-box">
+            <input type="password" name="pwd" placeholder="password" minlength="6" maxlength="10" title="Enter minimum 6 length and maximum 15 length" requird>
+        </div>
+        <div class="input-box">
+            <input type="text" name="gender" placeholder="Gender" required>
+        </div>
+        <div class="input-box">
+                <input type="text" name="city" placeholder="City" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="address" placeholder="Address" required>
+        </div>
+        <button type="submit" name="submit" class="btn">registration</button>
+    </div>
+    </form>
+</body>
+</html>

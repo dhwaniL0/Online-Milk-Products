@@ -1,0 +1,164 @@
+/* orderhistory.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 30px 0 20px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto 50px;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 16px;
+}
+
+td {
+    font-size: 15px;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.topnav {
+    background-color: #1a1a1a;
+    overflow: hidden;
+    padding: 12px 20px;
+}
+
+.topnav .brand-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: #1a1a1a;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+
+
+.topnav {
+    position: sticky;
+    top: 0;
+    height: 61px;
+    z-index: 1000;
+    /* background-color: #464545; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+/* Brand logo and name container */
+.brand {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 89px;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+}
+
+.brand-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Nav links */
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Hover effect */
+.topnav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Active link */
+.topnav a.active {
+    color: #ffffff;
+}
+
+/* Right-aligned section */
+.topnav-right {
+    /* margin-left: auto; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    width: 53%;
+    margin-left: 130px; /* adjust this value to move it more or less */
+}
+
+.nav-links a {
+    padding: 14px 16px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-links a:hover {
+    background-color: #333;
+    color: #fff;
+}

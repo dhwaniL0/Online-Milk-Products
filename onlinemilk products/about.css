@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.topnav {
+    background-color: #464545;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*Change the color of links on hover*/
+.topnav a:hover {
+  background-color: #7393B3;
+  color: #fff;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  /* background-color: #7393B3; */
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #7393B3;
+}
+.about {
+    background: url(background.jpg);
+    padding: 100px 0 20px 0;
+    text-align: center;
+}
+ 
+.about h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+ 
+.about p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ 
+.about-info {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+ 
+.about-img {
+    width: 500px;
+    height: 650px;
+ 
+}
+ 
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+ 
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+ 
+button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 16px;
+    color: black;
+    background: #ff5722;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+ 
+button:hover {
+    background-color: #7393B3;
+}
+.value {
+    padding: 30px 0;
+    text-align: center;
+}
+ 
+.value h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+ 
+.value-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+ 
+.card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 18rem;
+    height: 25rem;
+    margin-top: 10px;
+}
+ 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+ 
+.card-img {
+    width: 18rem;
+    height: 12rem;
+}
+ 
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+ 
+.card-info button {
+    margin: 2rem 1rem;
+}
+ 
+.card-name {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+ 
+.card-role {
+    font-size: 1rem;
+    color: #888;
+    margin: 5px 0;
+}
+ 
+ @media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+ 
+    .logo {
+        text-align: center;
+    }
+ 
+    .about h1 {
+        font-size: 2rem;
+    }
+ 
+    .about p {
+        font-size: 0.9rem;
+    }
+ 
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+ 
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+ 
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+ 
+    .value {
+        margin: 0 1rem;
+    }
+}
